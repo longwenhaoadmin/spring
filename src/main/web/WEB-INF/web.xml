@@ -4,4 +4,12 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+       <servlet-name>MyServlet</servlet-name>
+       <servlet-class>spring.test</servlet-class>
+	</servlet>
+	<servlet-mapping>  
+       <servlet-name>MyServlet</servlet-name>  
+       <url-pattern>*.do</url-pattern>  
+    </servlet-mapping> 
 </web-app>
