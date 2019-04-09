@@ -1,5 +1,9 @@
 /target
 /.settings/
-/.classpath
-/.gitignore
+# Eclipse
+.classpath
+.project
+.externalToolBuilders/
+.metadata
+.settings
 /bin/
