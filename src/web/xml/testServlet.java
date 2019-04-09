@@ -9,6 +9,13 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServlet;
 
 public class testServlet extends HttpServlet {
+	
+	@Override
+	public void destroy() {
+		// TODO Auto-generated method stub
+		super.destroy();
+		System.out.println("销毁servlet");
+	}
 	@Override
 	public void init(ServletConfig arg0) throws ServletException {
 		super.init(arg0);
