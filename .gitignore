@@ -1,4 +1,4 @@
-target/*
+
 /.settings/
 # Eclipse
 .classpath
@@ -7,3 +7,4 @@ target/*
 .metadata
 .settings
 /bin/
+/target/
