@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+  
+  	<context:annotation-config />
+  	
+    <bean id="springHelloWorld"
+        class="main.java.spring.service.impl.SpringHelloWorld"></bean>
+    <bean id="strutsHelloWorld"
+        class="main.java.spring.service.impl.StrutsHelloWorld"></bean>
+    <bean id="helloWorldService"
+        class="main.java.spring.service.HelloWorldService">
+        <!-- <property name="helloWorld" ref="strutsHelloWorld"/> -->
+    </bean>
+    <import resource="spring/Spring-Datasource.xml" />
+  
+</beans>
