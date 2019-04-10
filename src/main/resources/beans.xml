@@ -9,14 +9,14 @@
   	<context:annotation-config />
   	<context:component-scan base-package="main.java.spring"/> 
   	
-    <bean id="springHelloWorld"
+   <!--  <bean id="springHelloWorld"
         class="main.java.spring.service.impl.SpringHelloWorld"></bean>
     <bean id="strutsHelloWorld"
-        class="main.java.spring.service.impl.StrutsHelloWorld"></bean>
-    <bean id="helloWorldService"
+        class="main.java.spring.service.impl.StrutsHelloWorld"></bean> -->
+    <!-- <bean id="helloWorldService"
         class="main.java.spring.service.HelloWorldService">
-        <!-- <property name="helloWorld" ref="strutsHelloWorld"/> -->
-    </bean>
+        <property name="helloWorld" ref="strutsHelloWorld"/>
+    </bean> -->
     <!-- <bean id="jdbcdao"
     	class="main.java.spring.dao.impl.JdbcDAO">
     </bean> -->

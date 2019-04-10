@@ -9,9 +9,13 @@ import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.stereotype.Service;
 
 import main.java.spring.dao.BaseDAO;
+import main.java.spring.service.HelloWorldService;
 
 @Service("dao")
 public class JdbcDAO implements BaseDAO {
@@ -20,17 +24,8 @@ public class JdbcDAO implements BaseDAO {
 	@Autowired
 	private DataSource dataSource;
 
-	public DataSource getDataSource() {
-		return dataSource;
-	}
-
-	public void setDataSource(DataSource dataSource) {
-		this.dataSource = dataSource;
-	}
-
 	@Override
 	public void queryAllTable() {
-		
 		String sql = "select table_name from user_tables"; 
 		Connection conn = null;
 		try {
