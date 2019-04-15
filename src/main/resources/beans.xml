@@ -20,6 +20,6 @@
     <!-- <bean id="jdbcdao"
     	class="main.java.spring.dao.impl.JdbcDAO">
     </bean> -->
-    <import resource="spring/Spring-Datasource.xml" />
+    <import resource="spring/Spring-*.xml" />
   
 </beans>

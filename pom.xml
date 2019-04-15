@@ -25,6 +25,12 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
+		  <!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
 		<!-- Spring Core -->
 		<!-- http://mvnrepository.com/artifact/org.springframework/spring-core -->
 		<dependency>
