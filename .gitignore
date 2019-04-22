@@ -1,10 +1,6 @@
 
-/.settings/
 # Eclipse
-.classpath
-.project
 .externalToolBuilders/
 .metadata
-.settings
 /bin/
 /target/
