@@ -7,6 +7,17 @@
   	<welcome-file-list>
   		<welcome-file>index.jsp</welcome-file>
   	</welcome-file-list>
+  	<listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener> 
+	<!--contextConfigLocation在 ContextLoaderListener类中的默认值是 /WEB-INF/applicationContext.xml-->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring/beans.xml</param-value>
+		<!-- <param-value>classpath:applicationContext*.xml</param-value> -->
+	</context-param>
   	<servlet>
   		<servlet-name>spring-mvc</servlet-name>
   		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
